@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Telefonía Móvil</title>
+</head>
+<body>
+    <!-- Menú Inicial -->
+    <div id="menu">
+        <h1>Bienvenido a la Tienda de Telefonía Móvil</h1>
+        <p>Selecciona una opción:</p>
+        <button onclick="mostrarOpciones()">Ver Opciones</button>
+
+        <!-- Contenedor de opciones oculto inicialmente -->
+        <div id="opcionesMenu" style="display: none;">
+            <h2>Compañías y Precios:</h2>
+            <ul>
+                <!-- Lista de compañías y precios -->
+                <li>Tigo: $36,000 por plan (mes)</li>
+                <li>Claro: $38,300 por plan (mes)</li>
+                <li>Wom: $30,000 por plan (mes)</li>
+                <li>Virgin Mobile: $28,500 por plan (mes)</li>
+                <li>Movistar: $35,400 por plan (mes)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div id="contenido" style="display: none;">
+        <header>
+            <h1>Telefonía Móvil</h1>
+        </header>
+        <section id="pedido">
+            <!-- Aquí irán los datos del pedido -->
+        </section>
+        <section id="opciones">
+            <!-- Menú desplegable para seleccionar la compañía -->
+            <label for="telefonia">Selecciona tu compañía de preferencia:</label>
+            <select id="telefonia">
+                <option value="Tigo">Tigo</option>
+                <option value="Claro">Claro</option>
+                <option value="Wom">Wom</option>
+                <option value="Virgin Mobile">Virgin Mobile</option>
+                <option value="Movistar">Movistar</option>
+            </select>
+            <!-- Botón para calcular el total -->
+            <button onclick="calcularTotal()">Calcular Total</button>
+        </section>
+        <section id="total">
+            <!-- Aquí se mostrará el total a pagar -->
+        </section>
+        
+        <!-- Footer con logos de las compañías -->
+        <footer>
+            <img src="img/Tigo.png" alt="Logo de Tigo">
+            <img src="img/Claro.png" alt="Logo de Claro">
+            <img src="img/Wom.png" alt="Logo de Wom">
+            <img src="img/Virgin.png" alt="Logo de Virgin Móvil">
+            <img src="img/Movistar.png" alt="Logo de Movistar">
+        </footer>
+    </div>
+
+    <!-- Archivo de JavaScript -->
+    <script src="Carrito.js"></script>
+</body>
+</html>
